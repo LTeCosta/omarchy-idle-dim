@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ltecosta.idle-dim",
+  "name": "Idle Dim",
+  "version": "1.0.0",
+  "author": "Lucas Costa",
+  "license": "MIT",
+  "description": "Dims the built-in display backlight while the session is idle and restores it on the next input.",
+  "kinds": [
+    "service"
+  ],
+  "entryPoints": {
+    "service": "Service.qml"
+  }
+}
