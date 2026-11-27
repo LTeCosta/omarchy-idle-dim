@@ -14,9 +14,11 @@ Omarchy with `omarchy-hw-display` and `brightnessctl`.
 ## Install
 
 ```bash
-scripts/install idle-dim
+omarchy plugin add https://github.com/LTeCosta/omarchy-idle-dim.git
 omarchy plugin enable io.github.ltecosta.idle-dim
 ```
+
+Update it with `omarchy plugin update io.github.ltecosta.idle-dim`.
 
 ## Settings
 
@@ -39,11 +41,13 @@ While dimmed, the backlight's name and previous value are in `$XDG_RUNTIME_DIR/i
 
 ## Development
 
+From the repository root:
+
 ```bash
-python3 -B -m unittest discover -s tests
+scripts/check
 ```
 
-The tests drive `idle-dim.sh` with stand-ins for `brightnessctl` and `omarchy-hw-display`.
+It validates the plugin and runs the tests, which drive `idle-dim.sh` with stand-ins for `brightnessctl` and `omarchy-hw-display`.
 
 ## License
 
